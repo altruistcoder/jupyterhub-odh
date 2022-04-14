@@ -4,7 +4,7 @@ set -e
 /usr/libexec/s2i/assemble
 
 pip uninstall -y jupyterhub-singleuser-profiles
-pip install jupyterhub-singleuser-profiles-id==0.9.9
+pip install jupyterhub-singleuser-profiles-id==1.0.0
 
 # Install pycurl for tornado to support self-signed certs - see https://github.com/jupyterhub/oauthenticator/pull/410
 pip install --compile --install-option="--with-nss" --no-cache-dir pycurl
